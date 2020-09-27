@@ -1,0 +1,79 @@
+#  _____ _              _____           _                 
+# |  __ (_)            / ____|         | |                      Plugin by: Clarence2810
+# | |__) | _ __   __ _| (___  _   _ ___| |_ ___ _ __ ___        Plugin created: 11:11pm 9/27/20 EST
+# |  ___/ | '_ \ / _` |\___ \| | | / __| __/ _ \ '_ ` _ \       Discord Server: https://discord.gg/Ad2uDSp
+# | |   | | | | | (_| |____) | |_| \__ \ ||  __/ | | | | |      
+# |_|   |_|_| |_|\__, |_____/ \__, |___/\__\___|_| |_| |_|
+#                 __/ |        __/ |                      
+#                |___/        |___/      
+
+config-version: 1 # Hey dont touch me there this is my no no square (;
+
+############### PING SYSTEM SETUP ###############
+
+# Putting player ping below of name (OPTION: TRUE OR FALSE)
+ping-nametag: true
+
+# ms is for like 5ms | 5 is ping ms is the symbol
+ping-symbol: ms
+
+# Put the great ping number, this must be lower than stable-ping-first, stable-ping-second and bad-ping number
+# great-ping: 188 this mean below 118 ping is a great ping
+great-ping: 118
+
+# What color do you want to all great pings
+great-ping-color: §2§l
+
+# Put the first stable ping number, this must be lower than stable-ping-second and bad-ping number
+# stable-ping-first: 119 this mean inside of stable-ping-first and stable-ping-second is a stable ping
+stable-ping-first: 119
+
+# Put the second stable ping number, this must be higher than great-ping, stable-ping-first and lower than bad-ping number
+# stable-ping-first: 179 this mean inside of stable-ping-first and stable-ping-second is a stable ping
+stable-ping-second: 179
+
+# What color do you want to all stable pings
+stable-ping-color: §e§l
+
+# Put the bad ping number, this must be higher than great-ping, stable-ping-second number
+# bad-ping: 180 this mean higher 180 ping is a bad ping
+bad-ping: 180
+
+# What color do you want to all bad pings
+bad-ping-color: §c§l
+
+# What player ping trigger the bad-ping-system
+# bad-ping-alert: 2000 mean higher 2000 bad-ping-system gonna trigger higher
+bad-ping-alert: 2000
+
+# When player reached the bad-ping-alert number (Choose: kick or remind | If none of that you gonna get some internal server error but ill put specific what error and line)
+bad-ping-system: kick
+
+############### PING SYSTEM MESSAGES ###############
+
+player-not-found: §cHey! i cant find that player
+player-only: §cDid you know that i cant see your ping? right
+
+# If player send a /ping command 
+# Variable: {ping} and {player}
+ping-message: §e{player}'s ping is {ping} # No need color and ping symbol for ping because it has color and symbol from ping-color's and ping-symbol
+
+# When player reached the bad-ping-alert number and the bad-ping-system is at the remind option
+# Variable: {ping}
+bad-ping-message-remind: §cHey buddy your ping is high its {ping}
+
+# When player reached the bad-ping-alert number and the bad-ping-system is at the kick option
+# Variable: {ping}
+bad-ping-message-kick: §cHey buddy your ping is high its {ping}\n§cSo we need to kick you Sorry!
+
+############### COLOR AND FORMATS LISTS ############### (AVAILABLE COLORS AND FORMATS ON POCKETMINE)
+# §0 => Black         | §a => Green     | §k => Obfuscated
+# §1 => Dark Blue     | §b => Aqua      | §l => Bold
+# §2 => Dark Green    | §c => Red       | §o => Italic
+# §3 => Dark Aqua     | §d => Purple    | §r => Reset
+# §4 => Dark Red      | §e => Yellow
+# §5 => Dark Purple   | §f => White
+# §6 => Gold                
+# §7 => Gray               
+# §8 => Dark Gray          
+# §9 => Blue               

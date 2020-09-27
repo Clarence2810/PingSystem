@@ -1,0 +1,11 @@
+name: PingSystem
+main: Clarence2810\pingsystem\Main
+version: 1.0.0
+api: 3.15.0
+load: POSTWORLD
+author: Clarence2810
+description: Advanced System for player pings
+
+commands:
+  ping:
+    description: See your or other player ping
